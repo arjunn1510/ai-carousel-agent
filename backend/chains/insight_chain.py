@@ -1,5 +1,5 @@
 from langchain_core.prompts import PromptTemplate
-from backend.services.llm_service import llm
+from services.llm_service import llm
 from prompts.insight_prompt import INSIGHT_PROMPT
 
 prompt = PromptTemplate(
