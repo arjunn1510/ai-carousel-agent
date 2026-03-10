@@ -2,6 +2,8 @@
 
 import { useState } from 'react';
 
+const API_URL = "https://ai-carousel-agent.onrender.com";
+
 export default function UrlInput() {
 
   const [url, setUrl] = useState('');
@@ -18,7 +20,7 @@ export default function UrlInput() {
       setLoading(true);
       setJobId(null);
 
-      const res = await fetch('http://localhost:8000/generate-carousel', {
+      const res = await fetch(`${API_URL}/generate-carousel`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -46,11 +48,11 @@ export default function UrlInput() {
     if (!jobId) return;
 
     if (type === 'txt') {
-      window.open(`http://localhost:8000/download/txt/${jobId}`, "_blank");
+      window.open(`${API_URL}/download/txt/${jobId}`, "_blank");
     }
 
     if (type === 'zip') {
-      window.open(`http://localhost:8000/download/zip/${jobId}`, "_blank");
+      window.open(`${API_URL}/download/zip/${jobId}`, "_blank");
     }
   };
 
