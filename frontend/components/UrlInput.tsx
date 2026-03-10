@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const API_URL = "https://ai-carousel-agent.onrender.com";
+const API_URL = "https://zippy-ashton-epically.ngrok-free.dev";
 
 export default function UrlInput() {
 
