@@ -7,6 +7,8 @@ import os
 
 from services.pipeline_service import CarouselPipeline
 
+os.makedirs("outputs", exist_ok=True)
+
 app = FastAPI()
 
 # Enable CORS (allows frontend to talk to backend)
