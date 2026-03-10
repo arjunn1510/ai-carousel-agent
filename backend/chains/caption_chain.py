@@ -1,5 +1,5 @@
 from langchain_core.prompts import PromptTemplate
-from services.llm_service import llm
+from backend.services.llm_service import llm
 
 prompt = PromptTemplate(
     template="""

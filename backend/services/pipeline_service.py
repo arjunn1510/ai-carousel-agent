@@ -10,8 +10,8 @@ from tools.video_downloader import download_video
 from tools.audio_extractor import extract_audio
 from tools.transcription_tool import transcribe_audio
 
-from chains.insight_chain import insight_chain
-from chains.carousel_chain import carousel_chain
+from backend.chains.insight_chain import insight_chain
+from backend.chains.carousel_chain import carousel_chain
 #from chains.caption_chain import caption_chain
 
 from utils.image_generator import generate_slide_images

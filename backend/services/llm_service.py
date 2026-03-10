@@ -1,5 +1,5 @@
 from langchain_google_genai import ChatGoogleGenerativeAI
-from config import GOOGLE_API_KEYS
+from backend.config import GOOGLE_API_KEYS
 
 current_key_index = 0
 
