@@ -1,0 +1,11 @@
+langchain
+langchain-openai
+openai
+fastapi
+uvicorn
+yt-dlp
+faster-whisper
+pillow
+python-dotenv
+ffmpeg-python
+langchain-google-genai
